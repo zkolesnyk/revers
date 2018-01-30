@@ -4,9 +4,6 @@ public class Main {
         char[] chars = new char[string.length()];
         for (int i = 0; i < string.length(); i++) {
             chars[i] = string.charAt(string.length() - i - 1);
-        }
-
-        for (int i = 0; i < string.length(); i++) {
             System.out.print(chars[i]);
         }
 
