@@ -4,11 +4,12 @@ public class Main {
         char[] chars = new char[string.length()];
         String newString = "";
         for (int i = 0; i < string.length(); i++) {
-            chars[i] = string.charAt(i);
+            chars[i] = string.charAt(string.length() - i - 1);
         }
 
-        for (int i = string.length()-1; i >= 0; --i) {
+        for (int i = 0; i < string.length(); i++) {
             System.out.print(chars[i]);
         }
+
     }
 }
